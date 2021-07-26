@@ -1,0 +1,2384 @@
+@prefix : <http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix data-view: <http://www.w3.org/2003/g/data-view#> .
+@base <http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346> .
+
+# <http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346> rdf:type owl:Ontology ;
+#                                                                owl:imports rdf: ,
+#                                                                            rdfs: ,
+#                                                                            <http://www.w3.org/2002/07/owl> ,
+#                                                                            <c4i.owl> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#isExecutedBy
+:isExecutedBy rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BAA_Electric_potential_Sensing_with_scalar_output
+:BAA_Electric_potential_Sensing_with_scalar_output rdf:type owl:Class ;
+                                                   rdfs:subClassOf :BA_Sensing_electric_potential .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BAB_Electric_potential_Sensing_with_boolean_output
+:BAB_Electric_potential_Sensing_with_boolean_output rdf:type owl:Class ;
+                                                    rdfs:subClassOf :BA_Sensing_electric_potential .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BA_Sensing_electric_potential
+:BA_Sensing_electric_potential rdf:type owl:Class ;
+                               rdfs:subClassOf :B_Sensing ;
+                               rdfs:comment "Sensing for electric potential"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BBA_Resistivity_Sensing_for_electric_current_flow_with_scalar_output
+:BBA_Resistivity_Sensing_for_electric_current_flow_with_scalar_output rdf:type owl:Class ;
+                                                                      rdfs:subClassOf :BB_Sensing_resistivity .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BBB_Resistivity_Sensing_for_electric_current_flow_with_boolean_output
+:BBB_Resistivity_Sensing_for_electric_current_flow_with_boolean_output rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :BB_Sensing_resistivity .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BBC_Resistivity_Sensing_for_thermal_flow_with_scalar_output
+:BBC_Resistivity_Sensing_for_thermal_flow_with_scalar_output rdf:type owl:Class ;
+                                                             rdfs:subClassOf :BB_Sensing_resistivity .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BBD_Resistivity_Sensing_for_thermal_flow_with_boolean_output
+:BBD_Resistivity_Sensing_for_thermal_flow_with_boolean_output rdf:type owl:Class ;
+                                                              rdfs:subClassOf :BB_Sensing_resistivity .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BB_Sensing_resistivity
+:BB_Sensing_resistivity rdf:type owl:Class ;
+                        rdfs:subClassOf :B_Sensing ;
+                        rdfs:comment "Sensing for resistivity or conductivity"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BCA_Electric_current_Sensing_with_scalar_output
+:BCA_Electric_current_Sensing_with_scalar_output rdf:type owl:Class ;
+                                                 rdfs:subClassOf :BC_Sensing_electric_current .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BCB_Electric_current_Sensing_with_boolean_output
+:BCB_Electric_current_Sensing_with_boolean_output rdf:type owl:Class ;
+                                                  rdfs:subClassOf :BC_Sensing_electric_current .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BC_Sensing_electric_current
+:BC_Sensing_electric_current rdf:type owl:Class ;
+                             rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BDA_Density_Sensing_with_scalar_output
+:BDA_Density_Sensing_with_scalar_output rdf:type owl:Class ;
+                                        rdfs:subClassOf :BD_Sensing_density .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BDB_Density_Sensing_with_boolean_output
+:BDB_Density_Sensing_with_boolean_output rdf:type owl:Class ;
+                                         rdfs:subClassOf :BD_Sensing_density .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BD_Sensing_density
+:BD_Sensing_density rdf:type owl:Class ;
+                    rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BEA_Field_Sensing_for_electric_field_with_scalar_output
+:BEA_Field_Sensing_for_electric_field_with_scalar_output rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BE_Sensing_field .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BEB_Field_Sensing_for_electric_field_with_boolean_output
+:BEB_Field_Sensing_for_electric_field_with_boolean_output rdf:type owl:Class ;
+                                                          rdfs:subClassOf :BE_Sensing_field .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BEC_Field_Sensing_for_magnetic_field_with_scalar_output
+:BEC_Field_Sensing_for_magnetic_field_with_scalar_output rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BE_Sensing_field .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BED_Field_Sensing_for_magnetic_field_with_boolean_output
+:BED_Field_Sensing_for_magnetic_field_with_boolean_output rdf:type owl:Class ;
+                                                          rdfs:subClassOf :BE_Sensing_field .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BE_Sensing_field
+:BE_Sensing_field rdf:type owl:Class ;
+                  rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BFA_Flow_Sensing_with_scalar_output
+:BFA_Flow_Sensing_with_scalar_output rdf:type owl:Class ;
+                                     rdfs:subClassOf :BF_Sensing_flow .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BFB_Flow_Sensing_with_Boolean_output
+:BFB_Flow_Sensing_with_Boolean_output rdf:type owl:Class ;
+                                      rdfs:subClassOf :BF_Sensing_flow .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BF_Sensing_flow
+:BF_Sensing_flow rdf:type owl:Class ;
+                 rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BGA_Physical_dimension_Sensing_of_position_with_scalar_output
+:BGA_Physical_dimension_Sensing_of_position_with_scalar_output rdf:type owl:Class ;
+                                                               rdfs:subClassOf :BG_Sensing_physical_dimension .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BGB_Physical_dimension_Sensing_of_position_with_boolean_output
+:BGB_Physical_dimension_Sensing_of_position_with_boolean_output rdf:type owl:Class ;
+                                                                rdfs:subClassOf :BG_Sensing_physical_dimension .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BGC_Physical_dimension_Sensing_of_length_with_scalar_output
+:BGC_Physical_dimension_Sensing_of_length_with_scalar_output rdf:type owl:Class ;
+                                                             rdfs:subClassOf :BG_Sensing_physical_dimension .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BGD_Physical_dimension_Sensing_of_length_with_boolean_output
+:BGD_Physical_dimension_Sensing_of_length_with_boolean_output rdf:type owl:Class ;
+                                                              rdfs:subClassOf :BG_Sensing_physical_dimension .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BGE_Physical_dimension_Sensing_of_angle_or_direction_with_scalar_output
+:BGE_Physical_dimension_Sensing_of_angle_or_direction_with_scalar_output rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :BG_Sensing_physical_dimension .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BGF_Physical_dimension_Sensing_of_angle_or_direction_with_boolean_output
+:BGF_Physical_dimension_Sensing_of_angle_or_direction_with_boolean_output rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :BG_Sensing_physical_dimension .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BGG_Physical_dimension_Sensing_of_physical_output
+:BGG_Physical_dimension_Sensing_of_physical_output rdf:type owl:Class ;
+                                                   rdfs:subClassOf :BG_Sensing_physical_dimension .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BG_Sensing_physical_dimension
+:BG_Sensing_physical_dimension rdf:type owl:Class ;
+                               rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BHA_Energy_Sensing_of_flow_with_defined_energy_density
+:BHA_Energy_Sensing_of_flow_with_defined_energy_density rdf:type owl:Class ;
+                                                        rdfs:subClassOf :BH_Sensing_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BHB_Energy_Sensing_of_thermal_flow_with_defined_heat_capacity
+:BHB_Energy_Sensing_of_thermal_flow_with_defined_heat_capacity rdf:type owl:Class ;
+                                                               rdfs:subClassOf :BH_Sensing_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BHC_Energy_Sensing_of_electricity_flow
+:BHC_Energy_Sensing_of_electricity_flow rdf:type owl:Class ;
+                                        rdfs:subClassOf :BH_Sensing_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BH_Sensing_energy
+:BH_Sensing_energy rdf:type owl:Class ;
+                   rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BJA_power_Sensing_with_scalar_output
+:BJA_power_Sensing_with_scalar_output rdf:type owl:Class ;
+                                      rdfs:subClassOf :BJ_Sensing_power .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BJB_power_Sensing_with_boolean_output
+:BJB_power_Sensing_with_boolean_output rdf:type owl:Class ;
+                                       rdfs:subClassOf :BJ_Sensing_power .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BJ_Sensing_power
+:BJ_Sensing_power rdf:type owl:Class ;
+                  rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BKA_Time_Sensing_object_with_scalar_output
+:BKA_Time_Sensing_object_with_scalar_output rdf:type owl:Class ;
+                                            rdfs:subClassOf :BK_Sensing_time .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BKB_Time_Sensing_object_with_boolean_output
+:BKB_Time_Sensing_object_with_boolean_output rdf:type owl:Class ;
+                                             rdfs:subClassOf :BK_Sensing_time .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BK_Sensing_time
+:BK_Sensing_time rdf:type owl:Class ;
+                 rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BLA_Level_Sensing_with_scalar_output
+:BLA_Level_Sensing_with_scalar_output rdf:type owl:Class ;
+                                      rdfs:subClassOf :BL_Sensing_level .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BLB_Level_Sensing_with_boolean_output
+:BLB_Level_Sensing_with_boolean_output rdf:type owl:Class ;
+                                       rdfs:subClassOf :BL_Sensing_level .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BL_Sensing_level
+:BL_Sensing_level rdf:type owl:Class ;
+                  rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BMA_Humidity_Sensing_with_scalar_output
+:BMA_Humidity_Sensing_with_scalar_output rdf:type owl:Class ;
+                                         rdfs:subClassOf :BM_Sensing_humidity .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BMB_Humidity_Sensing_with_boolean_output
+:BMB_Humidity_Sensing_with_boolean_output rdf:type owl:Class ;
+                                          rdfs:subClassOf :BM_Sensing_humidity .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BM_Sensing_humidity
+:BM_Sensing_humidity rdf:type owl:Class ;
+                     rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BPA_Pressure_Sensing_object_utilizing_one_port_for_absolute_pressure_sensing_with_scalar_output
+:BPA_Pressure_Sensing_object_utilizing_one_port_for_absolute_pressure_sensing_with_scalar_output rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf :BP_Sensing_pressure .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BPB_Pressure_Sensing_object_utilizing_one_port_for_absolute_pressure_sensing_with_boolean_output
+:BPB_Pressure_Sensing_object_utilizing_one_port_for_absolute_pressure_sensing_with_boolean_output rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf :BP_Sensing_pressure .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BPC_Pressure_Sensing_object_utilizing_two_ports_for_differential_pressure_sensing_with_scalar_output
+:BPC_Pressure_Sensing_object_utilizing_two_ports_for_differential_pressure_sensing_with_scalar_output rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf :BP_Sensing_pressure .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BPD_Pressure_Sensing_object_utilizing_two_ports_for_differential_pressure_sensing_with_boolean_output
+:BPD_Pressure_Sensing_object_utilizing_two_ports_for_differential_pressure_sensing_with_boolean_output rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf :BP_Sensing_pressure .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BP_Sensing_pressure
+:BP_Sensing_pressure rdf:type owl:Class ;
+                     rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BQA_Concentration_Sensing_of_gas_with_scalar_output
+:BQA_Concentration_Sensing_of_gas_with_scalar_output rdf:type owl:Class ;
+                                                     rdfs:subClassOf :BQ_Sensing_concentration .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BQB_Concentration_Sensing_of_gas_with_boolean_output
+:BQB_Concentration_Sensing_of_gas_with_boolean_output rdf:type owl:Class ;
+                                                      rdfs:subClassOf :BQ_Sensing_concentration .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BQC_Concentration_Sensing_of_liquid_with_scalar_output
+:BQC_Concentration_Sensing_of_liquid_with_scalar_output rdf:type owl:Class ;
+                                                        rdfs:subClassOf :BQ_Sensing_concentration .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BQD_Concentration_Sensing_of_liquid_with_boolean_output
+:BQD_Concentration_Sensing_of_liquid_with_boolean_output rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BQ_Sensing_concentration .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BQE_Concentration_Sensing_of_solid_matter_with_scalar_output
+:BQE_Concentration_Sensing_of_solid_matter_with_scalar_output rdf:type owl:Class ;
+                                                              rdfs:subClassOf :BQ_Sensing_concentration .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BQF_Concentration_Sensing_of_solid_matter_with_boolean_output
+:BQF_Concentration_Sensing_of_solid_matter_with_boolean_output rdf:type owl:Class ;
+                                                               rdfs:subClassOf :BQ_Sensing_concentration .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BQ_Sensing_concentration
+:BQ_Sensing_concentration rdf:type owl:Class ;
+                          rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BRA_Radiation_Sensing_of_visible_electromagnetic_waves_with_scalar_output
+:BRA_Radiation_Sensing_of_visible_electromagnetic_waves_with_scalar_output rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :BR_Sensing_radiation .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BRB_Radiation_Sensing_of_visible_electromagnetic_waves_with_boolean_output
+:BRB_Radiation_Sensing_of_visible_electromagnetic_waves_with_boolean_output rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :BR_Sensing_radiation .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BRC_Radiation_Sensing_of_non-visible_electromagnetic_waves_with_scalar_output
+:BRC_Radiation_Sensing_of_non-visible_electromagnetic_waves_with_scalar_output rdf:type owl:Class ;
+                                                                               rdfs:subClassOf :BR_Sensing_radiation .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BRD_Radiation_Sensing_of_non-visible_electromagnetic_waves_with_boolean_output
+:BRD_Radiation_Sensing_of_non-visible_electromagnetic_waves_with_boolean_output rdf:type owl:Class ;
+                                                                                rdfs:subClassOf :BR_Sensing_radiation .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BRE_Radiation_Sensing_of_nuclear_particles_with_scalar_output
+:BRE_Radiation_Sensing_of_nuclear_particles_with_scalar_output rdf:type owl:Class ;
+                                                               rdfs:subClassOf :BR_Sensing_radiation .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BRF_Radiation_Sensing_of_nuclear_particles_with_boolean_output
+:BRF_Radiation_Sensing_of_nuclear_particles_with_boolean_output rdf:type owl:Class ;
+                                                                rdfs:subClassOf :BR_Sensing_radiation .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BR_Sensing_radiation
+:BR_Sensing_radiation rdf:type owl:Class ;
+                      rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSA_Time-Rating_of_non-rotational_cycles_with_scalar_output
+:BSA_Time-Rating_of_non-rotational_cycles_with_scalar_output rdf:type owl:Class ;
+                                                             rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSB_Time-Rating_of_non-rotational_cycles_with_boolean_output
+:BSB_Time-Rating_of_non-rotational_cycles_with_boolean_output rdf:type owl:Class ;
+                                                              rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSC_Time-Rating_of_distance_with_scalar_output
+:BSC_Time-Rating_of_distance_with_scalar_output rdf:type owl:Class ;
+                                                rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSD_Time-Rating_of_distance_with_boolean_output
+:BSD_Time-Rating_of_distance_with_boolean_output rdf:type owl:Class ;
+                                                 rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSE_Time-Rating_of_rotation_with_scalar_output
+:BSE_Time-Rating_of_rotation_with_scalar_output rdf:type owl:Class ;
+                                                rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSF_Time-Rating_of_rotation_with_boolean_output
+:BSF_Time-Rating_of_rotation_with_boolean_output rdf:type owl:Class ;
+                                                 rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSG_Time-Rating_of_speed_with_scalar_output
+:BSG_Time-Rating_of_speed_with_scalar_output rdf:type owl:Class ;
+                                             rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BSH_Time-Rating_of_speed_with_boolean_output
+:BSH_Time-Rating_of_speed_with_boolean_output rdf:type owl:Class ;
+                                              rdfs:subClassOf :BS_Time-Rating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BS_Time-Rating
+:BS_Time-Rating rdf:type owl:Class ;
+                rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BTA_Temperature_Sensing_with_scalar_output
+:BTA_Temperature_Sensing_with_scalar_output rdf:type owl:Class ;
+                                            rdfs:subClassOf :BT_Sensing_Temperature .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BTB_Temperature_Sensing_with_boolean_output
+:BTB_Temperature_Sensing_with_boolean_output rdf:type owl:Class ;
+                                             rdfs:subClassOf :BT_Sensing_Temperature .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BT_Sensing_Temperature
+:BT_Sensing_Temperature rdf:type owl:Class ;
+                        rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BU_Sensing_multi-quantities
+:BU_Sensing_multi-quantities rdf:type owl:Class ;
+                             rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BWA_Force_Sensing_of_weight_with_scalar_output
+:BWA_Force_Sensing_of_weight_with_scalar_output rdf:type owl:Class ;
+                                                rdfs:subClassOf :BW_Sensing_Force .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BWB_Force_Sensing_of_weight_with_boolean_output
+:BWB_Force_Sensing_of_weight_with_boolean_output rdf:type owl:Class ;
+                                                 rdfs:subClassOf :BW_Sensing_Force .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BWC_Force_Sensing_of_force_with_scalar_output
+:BWC_Force_Sensing_of_force_with_scalar_output rdf:type owl:Class ;
+                                               rdfs:subClassOf :BW_Sensing_Force .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BWD_Force_Sensing_of_force_with_boolean_output
+:BWD_Force_Sensing_of_force_with_boolean_output rdf:type owl:Class ;
+                                                rdfs:subClassOf :BW_Sensing_Force .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BWE_Force_Sensing_of_torque_with_scalar_output
+:BWE_Force_Sensing_of_torque_with_scalar_output rdf:type owl:Class ;
+                                                rdfs:subClassOf :BW_Sensing_Force .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BWF_Force_Sensing_of_torque_with_boolean_output
+:BWF_Force_Sensing_of_torque_with_boolean_output rdf:type owl:Class ;
+                                                 rdfs:subClassOf :BW_Sensing_Force .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BW_Sensing_Force
+:BW_Sensing_Force rdf:type owl:Class ;
+                  rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BXA_Audio-visual_Sensing_of_sound_with_scalar_output
+:BXA_Audio-visual_Sensing_of_sound_with_scalar_output rdf:type owl:Class ;
+                                                      rdfs:subClassOf :BX_Sensing_audio-visual .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BXB_Audio-visual_Sensing_of_sound_with_boolean_output
+:BXB_Audio-visual_Sensing_of_sound_with_boolean_output rdf:type owl:Class ;
+                                                       rdfs:subClassOf :BX_Sensing_audio-visual .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BXC_Audio-visual_Sensing_of_visual_appearance_with_scalar_output
+:BXC_Audio-visual_Sensing_of_visual_appearance_with_scalar_output rdf:type owl:Class ;
+                                                                  rdfs:subClassOf :BX_Sensing_audio-visual .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BXD_Audio-visual_Sensing_of_visual_appearance_with_boolean_output
+:BXD_Audio-visual_Sensing_of_visual_appearance_with_boolean_output rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :BX_Sensing_audio-visual .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BX_Sensing_audio-visual
+:BX_Sensing_audio-visual rdf:type owl:Class ;
+                         rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BYA_Information_Sensing_by_electrical_connection
+:BYA_Information_Sensing_by_electrical_connection rdf:type owl:Class ;
+                                                  rdfs:subClassOf :BY_Sensing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BYB_Information_Sensing_by_electromagnetic_field
+:BYB_Information_Sensing_by_electromagnetic_field rdf:type owl:Class ;
+                                                  rdfs:subClassOf :BY_Sensing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BYC_Information_Sensing_by_light
+:BYC_Information_Sensing_by_light rdf:type owl:Class ;
+                                  rdfs:subClassOf :BY_Sensing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BY_Sensing_information
+:BY_Sensing_information rdf:type owl:Class ;
+                        rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BZA_Incident_Sensing_detecting_the_number_of_inidents_with_scalar_output
+:BZA_Incident_Sensing_detecting_the_number_of_inidents_with_scalar_output rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :BZ_Sensing_incident .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BZB_Incident_Sensing_detecting_an_inident_with_boolean_output
+:BZB_Incident_Sensing_detecting_an_inident_with_boolean_output rdf:type owl:Class ;
+                                                               rdfs:subClassOf :BZ_Sensing_incident .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BZC_Incident_Sensing_detecting_the_presence_of_humans_with_boolean_output
+:BZC_Incident_Sensing_detecting_the_presence_of_humans_with_boolean_output rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :BZ_Sensing_incident .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BZD_Incident_Sensing_detecting_the_presence_of_matters_with_boolean_output
+:BZD_Incident_Sensing_detecting_the_presence_of_matters_with_boolean_output rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :BZ_Sensing_incident .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BZ_Sensing_incident
+:BZ_Sensing_incident rdf:type owl:Class ;
+                     rdfs:subClassOf :B_Sensing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#B_Sensing
+:B_Sensing rdf:type owl:Class ;
+           rdfs:subClassOf :Operating_Product ;
+           rdfs:comment "Picking up information and providing a representation"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CAA_Capacitive_Storing_for_electric_charge
+:CAA_Capacitive_Storing_for_electric_charge rdf:type owl:Class ;
+                                            rdfs:subClassOf :CA_Storing_capacitive .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CA_Storing_capacitive
+:CA_Storing_capacitive rdf:type owl:Class ;
+                       rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CBA_Inductive_Storing_for_inductive_charge
+:CBA_Inductive_Storing_for_inductive_charge rdf:type owl:Class ;
+                                            rdfs:subClassOf :CB_Storing_inductive .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CB_Storing_inductive
+:CB_Storing_inductive rdf:type owl:Class ;
+                      rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CCA_Electrochemical_Storing_for_reversible_reactions
+:CCA_Electrochemical_Storing_for_reversible_reactions rdf:type owl:Class ;
+                                                      rdfs:subClassOf :CC_Storing_electrochemical .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CC_Storing_electrochemical
+:CC_Storing_electrochemical rdf:type owl:Class ;
+                            rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CFA_Information_Storing_on_a_carrier_medium
+:CFA_Information_Storing_on_a_carrier_medium rdf:type owl:Class ;
+                                             rdfs:subClassOf :CF_Storing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CF_Storing_information
+:CF_Storing_information rdf:type owl:Class ;
+                        rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CLA_Open_stationary_Storing_for_fluids
+:CLA_Open_stationary_Storing_for_fluids rdf:type owl:Class ;
+                                        rdfs:subClassOf :CL_Storing_open_stationary .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CLB_Open_stationary_Storing_for_solid_objects
+:CLB_Open_stationary_Storing_for_solid_objects rdf:type owl:Class ;
+                                               rdfs:subClassOf :CL_Storing_open_stationary .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CLC_Open_stationary_Storing_for_persons
+:CLC_Open_stationary_Storing_for_persons rdf:type owl:Class ;
+                                         rdfs:subClassOf :CL_Storing_open_stationary .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CL_Storing_open_stationary
+:CL_Storing_open_stationary rdf:type owl:Class ;
+                            rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CMA_Enclosed_stationary_Storing_for_fluids
+:CMA_Enclosed_stationary_Storing_for_fluids rdf:type owl:Class ;
+                                            rdfs:subClassOf :CM_Storing_enclosed_stationary .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CMB_Enclosed_stationary_Storing_for_solid_matters
+:CMB_Enclosed_stationary_Storing_for_solid_matters rdf:type owl:Class ;
+                                                   rdfs:subClassOf :CM_Storing_enclosed_stationary .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CM_Storing_enclosed_stationary
+:CM_Storing_enclosed_stationary rdf:type owl:Class ;
+                                rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CNA_Moveable_Storing_for_solid_matters_or_persons
+:CNA_Moveable_Storing_for_solid_matters_or_persons rdf:type owl:Class ;
+                                                   rdfs:subClassOf :CN_Storing_moveable .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CNB_Moveable_Storing_for_gas
+:CNB_Moveable_Storing_for_gas rdf:type owl:Class ;
+                              rdfs:subClassOf :CN_Storing_moveable .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CNC_Moveable_Storing_for_liquid
+:CNC_Moveable_Storing_for_liquid rdf:type owl:Class ;
+                                 rdfs:subClassOf :CN_Storing_moveable .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CN_Storing_moveable
+:CN_Storing_moveable rdf:type owl:Class ;
+                     rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CPA_Thermal_energy_Storing_of_liquid
+:CPA_Thermal_energy_Storing_of_liquid rdf:type owl:Class ;
+                                      rdfs:subClassOf :CP_Storing_thermal_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CPB_Thermal_energy_Storing_of_gas
+:CPB_Thermal_energy_Storing_of_gas rdf:type owl:Class ;
+                                   rdfs:subClassOf :CP_Storing_thermal_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CPC_Thermal_energy_Storing_of_solid_matter
+:CPC_Thermal_energy_Storing_of_solid_matter rdf:type owl:Class ;
+                                            rdfs:subClassOf :CP_Storing_thermal_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CPD_Thermal_energy_Storing_of_state_changing_material
+:CPD_Thermal_energy_Storing_of_state_changing_material rdf:type owl:Class ;
+                                                       rdfs:subClassOf :CP_Storing_thermal_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CP_Storing_thermal_energy
+:CP_Storing_thermal_energy rdf:type owl:Class ;
+                           rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CQA_Mechanical_energy_Storing_in_the_form_of_kinetic_energy
+:CQA_Mechanical_energy_Storing_in_the_form_of_kinetic_energy rdf:type owl:Class ;
+                                                             rdfs:subClassOf :CQ_Storing_mechanical_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CQB_Mechanical_energy_Storing_in_the_form_of_elastic_energy
+:CQB_Mechanical_energy_Storing_in_the_form_of_elastic_energy rdf:type owl:Class ;
+                                                             rdfs:subClassOf :CQ_Storing_mechanical_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CQC_Mechanical_energy_Storing_in_the_form_of_gravitational_energy
+:CQC_Mechanical_energy_Storing_in_the_form_of_gravitational_energy rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :CQ_Storing_mechanical_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#CQ_Storing_mechanical_energy
+:CQ_Storing_mechanical_energy rdf:type owl:Class ;
+                              rdfs:subClassOf :C_Storing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#C_Storing
+:C_Storing rdf:type owl:Class ;
+           rdfs:subClassOf :Operating_Product ;
+           rdfs:comment "storing for subsequent retrieval"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EAA_Lighting_by_electricity
+:EAA_Lighting_by_electricity rdf:type owl:Class ;
+                             rdfs:subClassOf :EA_Lighting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EAB_Lighting_by_gas_combustion
+:EAB_Lighting_by_gas_combustion rdf:type owl:Class ;
+                                rdfs:subClassOf :EA_Lighting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EAC_Lighting_by_liquid_combustion
+:EAC_Lighting_by_liquid_combustion rdf:type owl:Class ;
+                                   rdfs:subClassOf :EA_Lighting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EA_Lighting
+:EA_Lighting rdf:type owl:Class ;
+             rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBA_Electric_Heating_delivered_by_a_surface
+:EBA_Electric_Heating_delivered_by_a_surface rdf:type owl:Class ;
+                                             rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBB_Electric_Heating_delivered_by_a_cable
+:EBB_Electric_Heating_delivered_by_a_cable rdf:type owl:Class ;
+                                           rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBC_Electric_Heating_delivered_by_forced_air
+:EBC_Electric_Heating_delivered_by_forced_air rdf:type owl:Class ;
+                                              rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBD_Electric_Heating_delivered_by_forced_air
+:EBD_Electric_Heating_delivered_by_forced_air rdf:type owl:Class ;
+                                              rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBE_Electric_Heating_delivered_by_an_electric_arc
+:EBE_Electric_Heating_delivered_by_an_electric_arc rdf:type owl:Class ;
+                                                   rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBF_Electric_Heating_delivered_by_a_current_flow
+:EBF_Electric_Heating_delivered_by_a_current_flow rdf:type owl:Class ;
+                                                  rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBG_Electric_Heating_delivered_by_infrared_radiation
+:EBG_Electric_Heating_delivered_by_infrared_radiation rdf:type owl:Class ;
+                                                      rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EBH_Electric_Heating_delivered_by_surrounding_surfaces
+:EBH_Electric_Heating_delivered_by_surrounding_surfaces rdf:type owl:Class ;
+                                                        rdfs:subClassOf :EB_Electrical_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EB_Electrical_Heating
+:EB_Electrical_Heating rdf:type owl:Class ;
+                       rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ECA_Electric_Cooling_applying_a_cooling_surface
+:ECA_Electric_Cooling_applying_a_cooling_surface rdf:type owl:Class ;
+                                                 rdfs:subClassOf :EC_Electric_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ECB_Electric_Cooling_applying_forced_air
+:ECB_Electric_Cooling_applying_forced_air rdf:type owl:Class ;
+                                          rdfs:subClassOf :EC_Electric_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ECC_Electric_Cooling_utilizing_phase_changing
+:ECC_Electric_Cooling_utilizing_phase_changing rdf:type owl:Class ;
+                                               rdfs:subClassOf :EC_Electric_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EC_Electric_Cooling
+:EC_Electric_Cooling rdf:type owl:Class ;
+                     rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EEA_Wireless_Powering_utilizing_inductive_coupling
+:EEA_Wireless_Powering_utilizing_inductive_coupling rdf:type owl:Class ;
+                                                    rdfs:subClassOf :EE_Wireless_Powering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EEB_Wireless_Powering_utilizing_microwaves
+:EEB_Wireless_Powering_utilizing_microwaves rdf:type owl:Class ;
+                                            rdfs:subClassOf :EE_Wireless_Powering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EEC_Wireless_Powering_utilizing_x-rays
+:EEC_Wireless_Powering_utilizing_x-rays rdf:type owl:Class ;
+                                        rdfs:subClassOf :EE_Wireless_Powering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EED_Wireless_Powering_utilizing_gamma_rays
+:EED_Wireless_Powering_utilizing_gamma_rays rdf:type owl:Class ;
+                                            rdfs:subClassOf :EE_Wireless_Powering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EEE_Wireless_Powering_utilizing_capacitive_coupling
+:EEE_Wireless_Powering_utilizing_capacitive_coupling rdf:type owl:Class ;
+                                                     rdfs:subClassOf :EE_Wireless_Powering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EE_Wireless_Powering
+:EE_Wireless_Powering rdf:type owl:Class ;
+                      rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EGA_Thermal_energy_Transferring_utilizing_phase_changing
+:EGA_Thermal_energy_Transferring_utilizing_phase_changing rdf:type owl:Class ;
+                                                          rdfs:subClassOf :EG_Transferring_thermal_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EGB_Thermal_energy_Transferring_utilizing_Peltier_effect
+:EGB_Thermal_energy_Transferring_utilizing_Peltier_effect rdf:type owl:Class ;
+                                                          rdfs:subClassOf :EG_Transferring_thermal_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EGC_Thermal_energy_Transferring_between_flows_by_means_of_an_intermediate_material
+:EGC_Thermal_energy_Transferring_between_flows_by_means_of_an_intermediate_material rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf :EG_Transferring_thermal_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EG_Transferring_thermal_energy
+:EG_Transferring_thermal_energy rdf:type owl:Class ;
+                                rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EMA_Combustion_Heating_for_heating_of_space
+:EMA_Combustion_Heating_for_heating_of_space rdf:type owl:Class ;
+                                             rdfs:subClassOf :EM_Combustion_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EMB_Combustion_Heating_for_heating_of_fluid
+:EMB_Combustion_Heating_for_heating_of_fluid rdf:type owl:Class ;
+                                             rdfs:subClassOf :EM_Combustion_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EMC_Combustion_Heating_for_heating_of_solid_matter
+:EMC_Combustion_Heating_for_heating_of_solid_matter rdf:type owl:Class ;
+                                                    rdfs:subClassOf :EM_Combustion_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EM_Combustion_Heating
+:EM_Combustion_Heating rdf:type owl:Class ;
+                       rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EPA_Thermal_Heating_delivered_by_a_permeable_heated_surface
+:EPA_Thermal_Heating_delivered_by_a_permeable_heated_surface rdf:type owl:Class ;
+                                                             rdfs:subClassOf :EP_Thermal_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EPB_Thermal_Heating_delivered_by_heated_fluid
+:EPB_Thermal_Heating_delivered_by_heated_fluid rdf:type owl:Class ;
+                                               rdfs:subClassOf :EP_Thermal_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EPC_Thermal_Heating_delivered_by_a_non-permeable_heated_surface
+:EPC_Thermal_Heating_delivered_by_a_non-permeable_heated_surface rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :EP_Thermal_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EPD_Thermal_Heating_delivered_by_forced_air
+:EPD_Thermal_Heating_delivered_by_forced_air rdf:type owl:Class ;
+                                             rdfs:subClassOf :EP_Thermal_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EP_Thermal_Heating
+:EP_Thermal_Heating rdf:type owl:Class ;
+                    rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EQA_Thermal_Cooling_applying_a_permeable_cold_surface
+:EQA_Thermal_Cooling_applying_a_permeable_cold_surface rdf:type owl:Class ;
+                                                       rdfs:subClassOf :EQ_Thermal_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EQB_Thermal_Cooling_applying_a_non-permeable_cold_surface
+:EQB_Thermal_Cooling_applying_a_non-permeable_cold_surface rdf:type owl:Class ;
+                                                           rdfs:subClassOf :EQ_Thermal_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EQC_Thermal_Cooling_applying_forfed_air
+:EQC_Thermal_Cooling_applying_forfed_air rdf:type owl:Class ;
+                                         rdfs:subClassOf :EQ_Thermal_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EQD_Thermal_Cooling_providing_cold_fluid
+:EQD_Thermal_Cooling_providing_cold_fluid rdf:type owl:Class ;
+                                          rdfs:subClassOf :EQ_Thermal_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EQE_Thermal_Cooling_applying_chilled_liquid_in_tubes
+:EQE_Thermal_Cooling_applying_chilled_liquid_in_tubes rdf:type owl:Class ;
+                                                      rdfs:subClassOf :EQ_Thermal_Cooling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EQ_Thermal_Cooling
+:EQ_Thermal_Cooling rdf:type owl:Class ;
+                    rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ETA_Nuclear_powered_Heating_providing_hot_water
+:ETA_Nuclear_powered_Heating_providing_hot_water rdf:type owl:Class ;
+                                                 rdfs:subClassOf :ET_Nuclear_powered_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ETB_Nuclear_powered_Heating_providing_steam_fluid
+:ETB_Nuclear_powered_Heating_providing_steam_fluid rdf:type owl:Class ;
+                                                   rdfs:subClassOf :ET_Nuclear_powered_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ETC_Nuclear_powered_Heating_providing_hot_gas
+:ETC_Nuclear_powered_Heating_providing_hot_gas rdf:type owl:Class ;
+                                               rdfs:subClassOf :ET_Nuclear_powered_Heating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ET_Nuclear_powered_Heating
+:ET_Nuclear_powered_Heating rdf:type owl:Class ;
+                            rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EUA_Particle_Emitting_being_ionized
+:EUA_Particle_Emitting_being_ionized rdf:type owl:Class ;
+                                     rdfs:subClassOf :EU_Particle_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EUB_Particle_Emitting_being_non-ionized
+:EUB_Particle_Emitting_being_non-ionized rdf:type owl:Class ;
+                                         rdfs:subClassOf :EU_Particle_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EU_Particle_Emitting
+:EU_Particle_Emitting rdf:type owl:Class ;
+                      rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EVA_Acoustic_wave_Emitting_utilizing_ultrasonic_frequencied
+:EVA_Acoustic_wave_Emitting_utilizing_ultrasonic_frequencied rdf:type owl:Class ;
+                                                             rdfs:subClassOf :EV_Acoustic_wave_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EVB_Acoustic_wave_Emitting_utilizing_audible_frequencies_for_noice_cancellation
+:EVB_Acoustic_wave_Emitting_utilizing_audible_frequencies_for_noice_cancellation rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf :EV_Acoustic_wave_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#EV_Acoustic_wave_Emitting
+:EV_Acoustic_wave_Emitting rdf:type owl:Class ;
+                           rdfs:subClassOf :E_Emitting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#E_Emitting
+:E_Emitting rdf:type owl:Class ;
+            rdfs:subClassOf :Operating_Product ;
+            rdfs:comment "Emitting"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FA_Overvoltage_Protecting
+:FA_Overvoltage_Protecting rdf:type owl:Class ;
+                           rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FB_Earth_fault_current_Protecting
+:FB_Earth_fault_current_Protecting rdf:type owl:Class ;
+                                   rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FC_Overcurrent_Protecting
+:FC_Overcurrent_Protecting rdf:type owl:Class ;
+                           rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FE_Field_Protecting
+:FE_Field_Protecting rdf:type owl:Class ;
+                     rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FLA_Pressure_Protecting_releasing_steam_or_liquid_when_the_pressure_exceeds_a_set_limit_value
+:FLA_Pressure_Protecting_releasing_steam_or_liquid_when_the_pressure_exceeds_a_set_limit_value rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf :FL_Pressure_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FLB_Pressure_Protecting_opening_or_closing_an_air_flow_when_the_pressure_is_above_or_below_a_set_limit_value
+:FLB_Pressure_Protecting_opening_or_closing_an_air_flow_when_the_pressure_is_above_or_below_a_set_limit_value rdf:type owl:Class ;
+                                                                                                              rdfs:subClassOf :FL_Pressure_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FLC_Pressure_Protecting_preventing_vacuum
+:FLC_Pressure_Protecting_preventing_vacuum rdf:type owl:Class ;
+                                           rdfs:subClassOf :FL_Pressure_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FLD_Pressure_Protecting_that_breaks_open_irreversibly_in_the_event_of_excessive_pressure_difference
+:FLD_Pressure_Protecting_that_breaks_open_irreversibly_in_the_event_of_excessive_pressure_difference rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf :FL_Pressure_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FLE_Pressure_Protecting_provided_by_a_volume_expansion
+:FLE_Pressure_Protecting_provided_by_a_volume_expansion rdf:type owl:Class ;
+                                                        rdfs:subClassOf :FL_Pressure_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FL_Pressure_Protecting
+:FL_Pressure_Protecting rdf:type owl:Class ;
+                        rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMA_Fire_Protecting_closing_an_air_flow_on_detection_of_fire
+:FMA_Fire_Protecting_closing_an_air_flow_on_detection_of_fire rdf:type owl:Class ;
+                                                              rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMB_Fire_Protecting_opening_or_closing_an_air_flow_on_detection_of_smoke
+:FMB_Fire_Protecting_opening_or_closing_an_air_flow_on_detection_of_smoke rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMC_Fire_Protecting_closing_an_air_flow_on_detection_of_smoke_and_or_fire
+:FMC_Fire_Protecting_closing_an_air_flow_on_detection_of_smoke_and_or_fire rdf:type owl:Class ;
+                                                                           rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMD_Fire_Protecting_for_manual_operation
+:FMD_Fire_Protecting_for_manual_operation rdf:type owl:Class ;
+                                          rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FME_Fire_Protecting_closing_a_passage_for_preventing_spread_of_smoke_and_or_fire
+:FME_Fire_Protecting_closing_a_passage_for_preventing_spread_of_smoke_and_or_fire rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMF_Fire_Protecting_dividing_an_area_into_smoke_zones
+:FMF_Fire_Protecting_dividing_an_area_into_smoke_zones rdf:type owl:Class ;
+                                                       rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMG_Fire_Protecting_closing_a_hole_for_preventing_spread_of_fire
+:FMG_Fire_Protecting_closing_a_hole_for_preventing_spread_of_fire rdf:type owl:Class ;
+                                                                  rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMH_Fire_Protecting_by_a_surface_cover
+:FMH_Fire_Protecting_by_a_surface_cover rdf:type owl:Class ;
+                                        rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMJ_Fire_Protecting_by_a_surface_coating
+:FMJ_Fire_Protecting_by_a_surface_coating rdf:type owl:Class ;
+                                          rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FMK_Fire_Protecting_by_impregnation
+:FMK_Fire_Protecting_by_impregnation rdf:type owl:Class ;
+                                     rdfs:subClassOf :FM_Fire_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FM_Fire_Protecting
+:FM_Fire_Protecting rdf:type owl:Class ;
+                    rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FN_Mechanical_force_Protecting
+:FN_Mechanical_force_Protecting rdf:type owl:Class ;
+                                rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FQ_Preventive_Protecting
+:FQ_Preventive_Protecting rdf:type owl:Class ;
+                          rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FR_Wear_Protecting
+:FR_Wear_Protecting rdf:type owl:Class ;
+                    rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#FS_Environment_Protecting
+:FS_Environment_Protecting rdf:type owl:Class ;
+                           rdfs:subClassOf :F_Protecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#F_Protecting
+:F_Protecting rdf:type owl:Class ;
+              rdfs:subClassOf :Operating_Product ;
+              rdfs:comment "Protecting against the effects of dangerous or undesirable conditions"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GAA_Mechanical_to_electrical_energy_Generating_of_alterning_current
+:GAA_Mechanical_to_electrical_energy_Generating_of_alterning_current rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :GA_Mechanical_to_electrical_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GAB_Mechanical_to_electrical_energy_Generating_of_direct_current
+:GAB_Mechanical_to_electrical_energy_Generating_of_direct_current rdf:type owl:Class ;
+                                                                  rdfs:subClassOf :GA_Mechanical_to_electrical_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GA_Mechanical_to_electrical_energy_Generating
+:GA_Mechanical_to_electrical_energy_Generating rdf:type owl:Class ;
+                                               rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GBA_Chemical_to_electrical_energy_Generating_from_a_non-renewable_source
+:GBA_Chemical_to_electrical_energy_Generating_from_a_non-renewable_source rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :GB_Chemical_to_electrical_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GBB_Chemical_to_electrical_energy_Generating_continuously_fed_by_fuel_and_oxidant
+:GBB_Chemical_to_electrical_energy_Generating_continuously_fed_by_fuel_and_oxidant rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :GB_Chemical_to_electrical_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GB_Chemical_to_electrical_energy_Generating
+:GB_Chemical_to_electrical_energy_Generating rdf:type owl:Class ;
+                                             rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GCA_Solar_to_electrical_energy_Generating_utilizing_wafer_based_semiconducting_material
+:GCA_Solar_to_electrical_energy_Generating_utilizing_wafer_based_semiconducting_material rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf :GC_Solar_to_electrical_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GCB_Solar_to_electrical_energy_Generating_utilizing_thin_film_material
+:GCB_Solar_to_electrical_energy_Generating_utilizing_thin_film_material rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :GC_Solar_to_electrical_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GC_Solar_to_electrical_energy_Generating
+:GC_Solar_to_electrical_energy_Generating rdf:type owl:Class ;
+                                          rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GFA_Signal_Generating_by_electromagnetic_waves
+:GFA_Signal_Generating_by_electromagnetic_waves rdf:type owl:Class ;
+                                                rdfs:subClassOf :GF_Signal_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GFB_Signal_Generating_by_wires
+:GFB_Signal_Generating_by_wires rdf:type owl:Class ;
+                                rdfs:subClassOf :GF_Signal_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GF_Signal_Generating
+:GF_Signal_Generating rdf:type owl:Class ;
+                      rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GLA_Continuous_Transferring_on_a_belt
+:GLA_Continuous_Transferring_on_a_belt rdf:type owl:Class ;
+                                       rdfs:subClassOf :GL_Continuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GLB_Continuous_Transferring_on_a_chain
+:GLB_Continuous_Transferring_on_a_chain rdf:type owl:Class ;
+                                        rdfs:subClassOf :GL_Continuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GLC_Continuous_Transferring_on_rollers
+:GLC_Continuous_Transferring_on_rollers rdf:type owl:Class ;
+                                        rdfs:subClassOf :GL_Continuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GLD_Continuous_Transferring_propelled_by_a_screw
+:GLD_Continuous_Transferring_propelled_by_a_screw rdf:type owl:Class ;
+                                                  rdfs:subClassOf :GL_Continuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GLE_Continuous_Transferring_consisting_of_a_chain_of_steps
+:GLE_Continuous_Transferring_consisting_of_a_chain_of_steps rdf:type owl:Class ;
+                                                            rdfs:subClassOf :GL_Continuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GLF_Continuous_Transferring_consisting_of_chain_of_containers
+:GLF_Continuous_Transferring_consisting_of_chain_of_containers rdf:type owl:Class ;
+                                                               rdfs:subClassOf :GL_Continuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GLG_Continuous_Transferring_on_vibrating_surface
+:GLG_Continuous_Transferring_on_vibrating_surface rdf:type owl:Class ;
+                                                  rdfs:subClassOf :GL_Continuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GL_Continuous_Transferring
+:GL_Continuous_Transferring rdf:type owl:Class ;
+                            rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GMA_Discontinuous_Transferring_horizontally
+:GMA_Discontinuous_Transferring_horizontally rdf:type owl:Class ;
+                                             rdfs:subClassOf :GM_Dicontinuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GMB_Discontinuous_Transferring_vertically
+:GMB_Discontinuous_Transferring_vertically rdf:type owl:Class ;
+                                           rdfs:subClassOf :GM_Dicontinuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GMC_Discontinuous_Transferring_lifting_and_moving_objects_vertically_and_or_horizontally
+:GMC_Discontinuous_Transferring_lifting_and_moving_objects_vertically_and_or_horizontally rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf :GM_Dicontinuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GMD_Discontinuous_Transferring_placing_objects_together
+:GMD_Discontinuous_Transferring_placing_objects_together rdf:type owl:Class ;
+                                                         rdfs:subClassOf :GM_Dicontinuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GME_Discontinuous_Transferring_turning_a_conveyed_flow
+:GME_Discontinuous_Transferring_turning_a_conveyed_flow rdf:type owl:Class ;
+                                                        rdfs:subClassOf :GM_Dicontinuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GMF_Discontinuous_Transferring_moving_objects_in_a_linear_flow_by_vibrating
+:GMF_Discontinuous_Transferring_moving_objects_in_a_linear_flow_by_vibrating rdf:type owl:Class ;
+                                                                             rdfs:subClassOf :GM_Dicontinuous_Transferring .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GM_Dicontinuous_Transferring
+:GM_Dicontinuous_Transferring rdf:type owl:Class ;
+                              rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GPA_Liquid_flow_Generating_by_forcing_trapped_liquid_to_the_discharge_side
+:GPA_Liquid_flow_Generating_by_forcing_trapped_liquid_to_the_discharge_side rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :GP_Liquid_flow_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GPB_Liquid_flow_Generating_by_increasing_the_flow_velocity_through_mechanical_motion
+:GPB_Liquid_flow_Generating_by_increasing_the_flow_velocity_through_mechanical_motion rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf :GP_Liquid_flow_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GPC_Liquid_flow_Generating_by_transferring_the_kinetic_energy_of_an_input_flow_to_an_output_flow
+:GPC_Liquid_flow_Generating_by_transferring_the_kinetic_energy_of_an_input_flow_to_an_output_flow rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf :GP_Liquid_flow_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GPD_Liquid_flow_Generating_by_converting_potential_energy_to_kinetic_energy_by_gravity
+:GPD_Liquid_flow_Generating_by_converting_potential_energy_to_kinetic_energy_by_gravity rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf :GP_Liquid_flow_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GP_Liquid_flow_Generating
+:GP_Liquid_flow_Generating rdf:type owl:Class ;
+                           rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GQA_Gaseous_flow_Generating_by_forcing_trapped_gas_to_the_discharge_side
+:GQA_Gaseous_flow_Generating_by_forcing_trapped_gas_to_the_discharge_side rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :GQ_Gaseous_flow_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GQB_Gaseous_flow_Generating_by_increasing_the_flow_velocity_through_mechanical_motion
+:GQB_Gaseous_flow_Generating_by_increasing_the_flow_velocity_through_mechanical_motion rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :GQ_Gaseous_flow_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GQC_Gaseous_flow_Generating_by_transferring_the_kinetic_energy_of_an_input_flow_to_an_output_flow
+:GQC_Gaseous_flow_Generating_by_transferring_the_kinetic_energy_of_an_input_flow_to_an_output_flow rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf :GQ_Gaseous_flow_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GQ_Gaseous_flow_Generating
+:GQ_Gaseous_flow_Generating rdf:type owl:Class ;
+                            rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GRA_Solar_to_thermal_energy_Generating_into_a_fluid_thermal_flow
+:GRA_Solar_to_thermal_energy_Generating_into_a_fluid_thermal_flow rdf:type owl:Class ;
+                                                                  rdfs:subClassOf :GR_Solar_to_thermal_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GRB_Solar_to_thermal_energy_Generating_generating_a_fluid_flow
+:GRB_Solar_to_thermal_energy_Generating_generating_a_fluid_flow rdf:type owl:Class ;
+                                                                rdfs:subClassOf :GR_Solar_to_thermal_energy_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#GR_Solar_to_thermal_energy_Generating
+:GR_Solar_to_thermal_energy_Generating rdf:type owl:Class ;
+                                       rdfs:subClassOf :G_Generating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#G_Generating
+:G_Generating rdf:type owl:Class ;
+              rdfs:subClassOf :Operating_Product ;
+              rdfs:comment "Providing a controllable flow"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HJ_Primary_Forming
+:HJ_Primary_Forming rdf:type owl:Class ;
+                    rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HK_Surface_Treatment
+:HK_Surface_Treatment rdf:type owl:Class ;
+                      rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HL_Assembling
+:HL_Assembling rdf:type owl:Class ;
+               rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HM_Force_Separating
+:HM_Force_Separating rdf:type owl:Class ;
+                     rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HPA_Thermal_Separating_removing_moisture
+:HPA_Thermal_Separating_removing_moisture rdf:type owl:Class ;
+                                          rdfs:subClassOf :HP_Thermal_Separating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HPB_Thermal_Separating_generating_the_vaporized_aggregation_of_a_liquid
+:HPB_Thermal_Separating_generating_the_vaporized_aggregation_of_a_liquid rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :HP_Thermal_Separating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HP_Thermal_Separating
+:HP_Thermal_Separating rdf:type owl:Class ;
+                       rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HQA_Mechanical_Separating_by_removing_substance_from_the_surface_of_a_liquid
+:HQA_Mechanical_Separating_by_removing_substance_from_the_surface_of_a_liquid rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :HQ_Mechanical_Separating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HQB_Mechanical_Separating_of_particles_based_on_their_size_and_or_shape
+:HQB_Mechanical_Separating_of_particles_based_on_their_size_and_or_shape rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :HQ_Mechanical_Separating .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HQ_Mechanical_Separating
+:HQ_Mechanical_Separating rdf:type owl:Class ;
+                          rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HR_Electric_or_magnetic_Separating
+:HR_Electric_or_magnetic_Separating rdf:type owl:Class ;
+                                    rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HS_Chemical_Separating
+:HS_Chemical_Separating rdf:type owl:Class ;
+                        rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HU_Grinding_and_Crushing
+:HU_Grinding_and_Crushing rdf:type owl:Class ;
+                          rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HV_Agglomerating
+:HV_Agglomerating rdf:type owl:Class ;
+                  rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HWA_Mixing_that_provides_a_new_property_substance_from_different_substances
+:HWA_Mixing_that_provides_a_new_property_substance_from_different_substances rdf:type owl:Class ;
+                                                                             rdfs:subClassOf :HW_Mixing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HWB_Mixing_providing_humid_gaseous_substance
+:HWB_Mixing_providing_humid_gaseous_substance rdf:type owl:Class ;
+                                              rdfs:subClassOf :HW_Mixing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HW_Mixing
+:HW_Mixing rdf:type owl:Class ;
+           rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#HX_Reacting
+:HX_Reacting rdf:type owl:Class ;
+             rdfs:subClassOf :H_Processing_matter .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#H_Processing_matter
+:H_Processing_matter rdf:type owl:Class ;
+                     rdfs:subClassOf :Operating_Product ;
+                     rdfs:comment "Treating matter"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KEA_Electric_signal_Processing_with_human_intervention
+:KEA_Electric_signal_Processing_with_human_intervention rdf:type owl:Class ;
+                                                        rdfs:subClassOf :KE_Electric_signal_Processing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KEB_Electric_signal_Processing_without_human_intervention_for_control_of_devices
+:KEB_Electric_signal_Processing_without_human_intervention_for_control_of_devices rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf :KE_Electric_signal_Processing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KEC_Electric_signal_Processing_without_human_intervention_providing_input_output_to_devices
+:KEC_Electric_signal_Processing_without_human_intervention_providing_input_output_to_devices rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf :KE_Electric_signal_Processing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KED_Electric_signal_Processing_without_human_intervention_forwarding_signals_between_data_networks
+:KED_Electric_signal_Processing_without_human_intervention_forwarding_signals_between_data_networks rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf :KE_Electric_signal_Processing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KEE_Electric_signal_Processing_without_human_intervention_saving_teh_information_provided_by_the_input_on_a_storage_device
+:KEE_Electric_signal_Processing_without_human_intervention_saving_teh_information_provided_by_the_input_on_a_storage_device rdf:type owl:Class ;
+                                                                                                                            rdfs:subClassOf :KE_Electric_signal_Processing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KE_Electric_signal_Processing
+:KE_Electric_signal_Processing rdf:type owl:Class ;
+                               rdfs:subClassOf :K_Processing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KF_Electric_signal_Relaying
+:KF_Electric_signal_Relaying rdf:type owl:Class ;
+                             rdfs:subClassOf :K_Processing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KG_Optical_Signalling
+:KG_Optical_Signalling rdf:type owl:Class ;
+                       rdfs:subClassOf :K_Processing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KH_Fluid_Signalling
+:KH_Fluid_Signalling rdf:type owl:Class ;
+                     rdfs:subClassOf :K_Processing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KJ_Mechanical_Signalling
+:KJ_Mechanical_Signalling rdf:type owl:Class ;
+                          rdfs:subClassOf :K_Processing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#KZ_Multiple_kind_Signalling
+:KZ_Multiple_kind_Signalling rdf:type owl:Class ;
+                             rdfs:subClassOf :K_Processing_information .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#K_Processing_information
+:K_Processing_information rdf:type owl:Class ;
+                          rdfs:subClassOf :Operating_Product ;
+                          rdfs:comment "Treating input signals and Providing an appropriate output"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MAA_Electromagnetic_rotational_Driving_providing_continous_rotation
+:MAA_Electromagnetic_rotational_Driving_providing_continous_rotation rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :MA_Electromagnetic_rotational_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MAB_Electromagnetic_rotational_Driving_providing_discrete_rotational_steps
+:MAB_Electromagnetic_rotational_Driving_providing_discrete_rotational_steps rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :MA_Electromagnetic_rotational_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MA_Electromagnetic_rotational_Driving
+:MA_Electromagnetic_rotational_Driving rdf:type owl:Class ;
+                                       rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MBA_Electromagnetic_linear_Driving_providing_a_continuous_movement
+:MBA_Electromagnetic_linear_Driving_providing_a_continuous_movement rdf:type owl:Class ;
+                                                                    rdfs:subClassOf :MB_Electromagnetic_linear_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MBB_Electromagnetic_linear_Driving_providing_discrete_steps
+:MBB_Electromagnetic_linear_Driving_providing_discrete_steps rdf:type owl:Class ;
+                                                             rdfs:subClassOf :MB_Electromagnetic_linear_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MB_Electromagnetic_linear_Driving
+:MB_Electromagnetic_linear_Driving rdf:type owl:Class ;
+                                   rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MCA_Magnetic_force_Driving_by_permanent_magnet
+:MCA_Magnetic_force_Driving_by_permanent_magnet rdf:type owl:Class ;
+                                                rdfs:subClassOf :MC_Magnetic_force_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MC_Magnetic_force_Driving
+:MC_Magnetic_force_Driving rdf:type owl:Class ;
+                           rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MDA_Piezoelectric_Driving_by_piezoelectric_Crystal
+:MDA_Piezoelectric_Driving_by_piezoelectric_Crystal rdf:type owl:Class ;
+                                                    rdfs:subClassOf :MD_Piezoelectric_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MD_Piezoelectric_Driving
+:MD_Piezoelectric_Driving rdf:type owl:Class ;
+                          rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MLA_Mechanical_energy_Driving_releasing_gravitational_energy
+:MLA_Mechanical_energy_Driving_releasing_gravitational_energy rdf:type owl:Class ;
+                                                              rdfs:subClassOf :ML_Mechanical_energy_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MLB_Mechanical_energy_Driving_releasing_elastic_energy
+:MLB_Mechanical_energy_Driving_releasing_elastic_energy rdf:type owl:Class ;
+                                                        rdfs:subClassOf :ML_Mechanical_energy_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MLC_Mechanical_energy_Driving_in_the_form_of_kinetic_energy_in_blowing_air
+:MLC_Mechanical_energy_Driving_in_the_form_of_kinetic_energy_in_blowing_air rdf:type owl:Class ;
+                                                                            rdfs:subClassOf :ML_Mechanical_energy_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MLD_Mechanical_energy_Driving_in_the_form_of_kinetic_energy_in_streaming_water
+:MLD_Mechanical_energy_Driving_in_the_form_of_kinetic_energy_in_streaming_water rdf:type owl:Class ;
+                                                                                rdfs:subClassOf :ML_Mechanical_energy_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MLE_Mechanical_energy_Driving_in_the_form_of_kinetic_energy_and_reaction_force_in_streaming_and_or_expanding_gases
+:MLE_Mechanical_energy_Driving_in_the_form_of_kinetic_energy_and_reaction_force_in_streaming_and_or_expanding_gases rdf:type owl:Class ;
+                                                                                                                    rdfs:subClassOf :ML_Mechanical_energy_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ML_Mechanical_energy_Driving
+:ML_Mechanical_energy_Driving rdf:type owl:Class ;
+                              rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MMA_Fluid_powered_Driving_providing_movement_corresponding_to_a_liquid_volume
+:MMA_Fluid_powered_Driving_providing_movement_corresponding_to_a_liquid_volume rdf:type owl:Class ;
+                                                                               rdfs:subClassOf :MM_Fluid_powered_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MMB_Fluid_powered_Driving_providing_movement_to_end_positions_depending_on_the_gaseous_pressure
+:MMB_Fluid_powered_Driving_providing_movement_to_end_positions_depending_on_the_gaseous_pressure rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf :MM_Fluid_powered_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MMC_Fluid_powered_Driving_providing_rotation_by_a_flowing_liquid
+:MMC_Fluid_powered_Driving_providing_rotation_by_a_flowing_liquid rdf:type owl:Class ;
+                                                                  rdfs:subClassOf :MM_Fluid_powered_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MMD_Fluid_powered_Driving_providing_rotation_by_a_pressurized_gas
+:MMD_Fluid_powered_Driving_providing_rotation_by_a_pressurized_gas rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :MM_Fluid_powered_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MM_Fluid_powered_Driving
+:MM_Fluid_powered_Driving rdf:type owl:Class ;
+                          rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MSA_Combustion_engine_in_cylinders_with_pistons_powered_by_a_spark_ignited_combustion
+:MSA_Combustion_engine_in_cylinders_with_pistons_powered_by_a_spark_ignited_combustion rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :MS_Combustion_Engine .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MSB_Combustion_engine_in_cylinders_with_pistons_powered_by_compressed_ignited_combustion
+:MSB_Combustion_engine_in_cylinders_with_pistons_powered_by_compressed_ignited_combustion rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf :MS_Combustion_Engine .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MSC_Combustion_engine_in_circular_compartment_with_eccentric_rotary_piston_powered_by_spark_ignited_combustion
+:MSC_Combustion_engine_in_circular_compartment_with_eccentric_rotary_piston_powered_by_spark_ignited_combustion rdf:type owl:Class ;
+                                                                                                                rdfs:subClassOf :MS_Combustion_Engine .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MS_Combustion_Engine
+:MS_Combustion_Engine rdf:type owl:Class ;
+                      rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MTA_Heat_Engine_utilizing_expanding_steam_acting_on_one_piston
+:MTA_Heat_Engine_utilizing_expanding_steam_acting_on_one_piston rdf:type owl:Class ;
+                                                                rdfs:subClassOf :MT_Heat_Engine .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MTB_Heat_Engine_utilizing_two_pistons_within_one_heated_and_one_cooled_cylinder_or_cylinder_part
+:MTB_Heat_Engine_utilizing_two_pistons_within_one_heated_and_one_cooled_cylinder_or_cylinder_part rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf :MT_Heat_Engine .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#MT_Heat_Engine
+:MT_Heat_Engine rdf:type owl:Class ;
+                rdfs:subClassOf :M_Driving .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#M_Driving
+:M_Driving rdf:type owl:Class ;
+           rdfs:subClassOf :Operating_Product ;
+           rdfs:comment "Providing mechanical movement or force"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#NA_Infilling
+:NA_Infilling rdf:type owl:Class ;
+              rdfs:subClassOf :N_Covering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#NB_Closing
+:NB_Closing rdf:type owl:Class ;
+            rdfs:subClassOf :N_Covering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#NC_Finishing
+:NC_Finishing rdf:type owl:Class ;
+              rdfs:subClassOf :N_Covering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#ND_Terminating
+:ND_Terminating rdf:type owl:Class ;
+                rdfs:subClassOf :N_Covering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#NE_Hiding
+:NE_Hiding rdf:type owl:Class ;
+           rdfs:subClassOf :N_Covering .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#N_Covering
+:N_Covering rdf:type owl:Class ;
+            rdfs:subClassOf :Operating_Product ;
+            rdfs:comment "Enclosing partly or fully another object"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#Operating_Product
+:Operating_Product rdf:type owl:Class ;
+                   rdfs:subClassOf <https://www.w3id.org/basyx/c4i#Capability> .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#PF_Visible_state_Indicating
+:PF_Visible_state_Indicating rdf:type owl:Class ;
+                             rdfs:subClassOf :P_Presenting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#PG_Scalar_Displaying
+:PG_Scalar_Displaying rdf:type owl:Class ;
+                      rdfs:subClassOf :P_Presenting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#PH_Graphical_Displaying
+:PH_Graphical_Displaying rdf:type owl:Class ;
+                         rdfs:subClassOf :P_Presenting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#PJ_Acoustical_Presenting
+:PJ_Acoustical_Presenting rdf:type owl:Class ;
+                          rdfs:subClassOf :P_Presenting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#PK_Tactile_Presenting
+:PK_Tactile_Presenting rdf:type owl:Class ;
+                       rdfs:subClassOf :P_Presenting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#PL_Ornamental_Presenting
+:PL_Ornamental_Presenting rdf:type owl:Class ;
+                          rdfs:subClassOf :P_Presenting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#PZ_Multiple_form_Presenting
+:PZ_Multiple_form_Presenting rdf:type owl:Class ;
+                             rdfs:subClassOf :P_Presenting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#P_Presenting
+:P_Presenting rdf:type owl:Class ;
+              rdfs:subClassOf :Operating_Product ;
+              rdfs:comment "Providing perceptible information"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QA_Electric_Controlling
+:QA_Electric_Controlling rdf:type owl:Class ;
+                         rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QB_Electric_Separating
+:QB_Electric_Separating rdf:type owl:Class ;
+                        rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QC_Electric_Earthing
+:QC_Electric_Earthing rdf:type owl:Class ;
+                      rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QMA_Sealed_fluid_Switching_of_a_liquid_flow
+:QMA_Sealed_fluid_Switching_of_a_liquid_flow rdf:type owl:Class ;
+                                             rdfs:subClassOf :QM_Sealed_fluid_Switching .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QMB_Sealed_fluid_Switching_of_a_gas_flow
+:QMB_Sealed_fluid_Switching_of_a_gas_flow rdf:type owl:Class ;
+                                          rdfs:subClassOf :QM_Sealed_fluid_Switching .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QM_Sealed_fluid_Switching
+:QM_Sealed_fluid_Switching rdf:type owl:Class ;
+                           rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QNA_Sealed_fluid_Varying_of_a_liquid_flow
+:QNA_Sealed_fluid_Varying_of_a_liquid_flow rdf:type owl:Class ;
+                                           rdfs:subClassOf :QN_Sealed_fluid_Varying .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QNB_Sealed_fluid_Varying_of_a_gas_flow
+:QNB_Sealed_fluid_Varying_of_a_gas_flow rdf:type owl:Class ;
+                                        rdfs:subClassOf :QN_Sealed_fluid_Varying .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QN_Sealed_fluid_Varying
+:QN_Sealed_fluid_Varying rdf:type owl:Class ;
+                         rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QP_Open_flow_Controlling
+:QP_Open_flow_Controlling rdf:type owl:Class ;
+                          rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQ
+:QQ rdf:type owl:Class ;
+    rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQA_Space_Accessing_for_light_entry_only
+:QQA_Space_Accessing_for_light_entry_only rdf:type owl:Class ;
+                                          rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQB_Space_Accessing_for_entry_of_light_and_persons
+:QQB_Space_Accessing_for_entry_of_light_and_persons rdf:type owl:Class ;
+                                                    rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQC_Space_Accessing_for_upright_passage_by_persons
+:QQC_Space_Accessing_for_upright_passage_by_persons rdf:type owl:Class ;
+                                                    rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQD_Space_Accessing_of_restricted_size_for_passage_of_persons_and_goods
+:QQD_Space_Accessing_of_restricted_size_for_passage_of_persons_and_goods rdf:type owl:Class ;
+                                                                         rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQE_Space_Accessing_of_extended_size_for_transfer_of_objects
+:QQE_Space_Accessing_of_extended_size_for_transfer_of_objects rdf:type owl:Class ;
+                                                              rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQF_Space_Accessing_for_partially
+:QQF_Space_Accessing_for_partially rdf:type owl:Class ;
+                                   rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQG_Space_Accessing_by_blocking_entrance_to_a_track
+:QQG_Space_Accessing_by_blocking_entrance_to_a_track rdf:type owl:Class ;
+                                                     rdfs:subClassOf :QQ_Space_Accessing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QQ_Space_Accessing
+:QQ_Space_Accessing rdf:type owl:Class ;
+                    rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QRA_Solid_substance_flow_Varying_with_rotating_chambers
+:QRA_Solid_substance_flow_Varying_with_rotating_chambers rdf:type owl:Class ;
+                                                         rdfs:subClassOf :QR_Solid_substance_flow_Varying .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QRB_Solid_substance_flow_Varying_with_an_iris_opening
+:QRB_Solid_substance_flow_Varying_with_an_iris_opening rdf:type owl:Class ;
+                                                       rdfs:subClassOf :QR_Solid_substance_flow_Varying .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QRC_Solid_substance_flow_Varying_with_a_hinged_flap_or_disc
+:QRC_Solid_substance_flow_Varying_with_a_hinged_flap_or_disc rdf:type owl:Class ;
+                                                             rdfs:subClassOf :QR_Solid_substance_flow_Varying .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QR_Solid_substance_flow_Varying
+:QR_Solid_substance_flow_Varying rdf:type owl:Class ;
+                                 rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QS_Mechanical_movement_Controlling
+:QS_Mechanical_movement_Controlling rdf:type owl:Class ;
+                                    rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#QZ_Multiple_measure_Controlling
+:QZ_Multiple_measure_Controlling rdf:type owl:Class ;
+                                 rdfs:subClassOf :Q_Controlling .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#Q_Controlling
+:Q_Controlling rdf:type owl:Class ;
+               rdfs:subClassOf :Operating_Product ;
+               rdfs:comment "Controlling access or flow"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RA_Electricity_Restricting
+:RA_Electricity_Restricting rdf:type owl:Class ;
+                            rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RB_Electricity_Stabilising
+:RB_Electricity_Stabilising rdf:type owl:Class ;
+                            rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RF_Signal_Stabilising
+:RF_Signal_Stabilising rdf:type owl:Class ;
+                       rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RL_Movement_Restricting
+:RL_Movement_Restricting rdf:type owl:Class ;
+                         rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RMA_Return_flow_Restricting_of_liquids
+:RMA_Return_flow_Restricting_of_liquids rdf:type owl:Class ;
+                                        rdfs:subClassOf :RM_Return_flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RMB_Return_flow_Restricting_of_gas
+:RMB_Return_flow_Restricting_of_gas rdf:type owl:Class ;
+                                    rdfs:subClassOf :RM_Return_flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RMC_Return_flow_Restricting_of_solid_substances
+:RMC_Return_flow_Restricting_of_solid_substances rdf:type owl:Class ;
+                                                 rdfs:subClassOf :RM_Return_flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RMD_Return_flow_Restricting_of_odour
+:RMD_Return_flow_Restricting_of_odour rdf:type owl:Class ;
+                                      rdfs:subClassOf :RM_Return_flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RM_Return_flow_Restricting
+:RM_Return_flow_Restricting rdf:type owl:Class ;
+                            rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RNA_Restricting_flow_of_liquids_by_an_adjustable_means
+:RNA_Restricting_flow_of_liquids_by_an_adjustable_means rdf:type owl:Class ;
+                                                        rdfs:subClassOf :RN_Flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RNB_Restricting_flow_of_gas_by_an_adjustable_means
+:RNB_Restricting_flow_of_gas_by_an_adjustable_means rdf:type owl:Class ;
+                                                    rdfs:subClassOf :RN_Flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RNC_Restricting_flow_of_solid_substances_by_an_adjustable_means
+:RNC_Restricting_flow_of_solid_substances_by_an_adjustable_means rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :RN_Flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RND_Restricting_flow_by_a_fixed_means
+:RND_Restricting_flow_by_a_fixed_means rdf:type owl:Class ;
+                                       rdfs:subClassOf :RN_Flow_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RN_Flow_Restricting
+:RN_Flow_Restricting rdf:type owl:Class ;
+                     rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQ
+:RQ rdf:type owl:Class ;
+    rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQA_Local_climate_Stabilising_by_restricting_a_thermal_or_sound_transmission
+:RQA_Local_climate_Stabilising_by_restricting_a_thermal_or_sound_transmission rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQC_Local_climate_Stabilising_by_stabilising_the_propagation_of_sound
+:RQC_Local_climate_Stabilising_by_stabilising_the_propagation_of_sound rdf:type owl:Class ;
+                                                                       rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQE_Local_climate_Stabilising_by_restricting_transmission_of_light_using_textiles
+:RQE_Local_climate_Stabilising_by_restricting_transmission_of_light_using_textiles rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQF_Local_climate_Stabilising_by_restricting_transmission_of_light_using_narrow_adjustable_louvers
+:RQF_Local_climate_Stabilising_by_restricting_transmission_of_light_using_narrow_adjustable_louvers rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQG_Local_climate_Stabilising_by_restricting_transmission_of_light_using_an_external_panel
+:RQG_Local_climate_Stabilising_by_restricting_transmission_of_light_using_an_external_panel rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQH_Local_climate_Stabilising_preventing_weed_growth
+:RQH_Local_climate_Stabilising_preventing_weed_growth rdf:type owl:Class ;
+                                                      rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQJ_Local_climate_Stabilising_by_restricting_vision_and_sound
+:RQJ_Local_climate_Stabilising_by_restricting_vision_and_sound rdf:type owl:Class ;
+                                                               rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQ_Local_climate_Stabilising
+:RQ_Local_climate_Stabilising rdf:type owl:Class ;
+                              rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RU_Access_Restricting
+:RU_Access_Restricting rdf:type owl:Class ;
+                       rdfs:subClassOf :R_Restricting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#R_Restricting
+:R_Restricting rdf:type owl:Class ;
+               rdfs:subClassOf :Operating_Product ;
+               rdfs:comment "Restricting or Stabilising"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#SF_Face_Interacting
+:SF_Face_Interacting rdf:type owl:Class ;
+                     rdfs:subClassOf :S_Human_Interaction .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#SG_Hand_Interacting
+:SG_Hand_Interacting rdf:type owl:Class ;
+                     rdfs:subClassOf :S_Human_Interaction .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#SH_Foot_Interacting
+:SH_Foot_Interacting rdf:type owl:Class ;
+                     rdfs:subClassOf :S_Human_Interaction .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#SJ_Finger_Interacting
+:SJ_Finger_Interacting rdf:type owl:Class ;
+                       rdfs:subClassOf :S_Human_Interaction .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#SK_Movement_Interacting
+:SK_Movement_Interacting rdf:type owl:Class ;
+                         rdfs:subClassOf :S_Human_Interaction .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#SZ_Multi-Interacting
+:SZ_Multi-Interacting rdf:type owl:Class ;
+                      rdfs:subClassOf :S_Human_Interaction .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#S_Human_Interaction
+:S_Human_Interaction rdf:type owl:Class ;
+                     rdfs:subClassOf :Operating_Product ;
+                     rdfs:comment "Detecting a human action and Providing an appropriate response"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TA_Electric_energy_Transforming
+:TA_Electric_energy_Transforming rdf:type owl:Class ;
+                                 rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TB_Electric_energy_Converting
+:TB_Electric_energy_Converting rdf:type owl:Class ;
+                               rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TC_Universal_Powering
+:TC_Universal_Powering rdf:type owl:Class ;
+                       rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TF_Signal_Converting
+:TF_Signal_Converting rdf:type owl:Class ;
+                      rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TL_Mechanical_energy_Transforming
+:TL_Mechanical_energy_Transforming rdf:type owl:Class ;
+                                   rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TM_Mass_Reducing
+:TM_Mass_Reducing rdf:type owl:Class ;
+                  rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TP_Matter_Reshaping
+:TP_Matter_Reshaping rdf:type owl:Class ;
+                     rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#TR_Organic_Plant
+:TR_Organic_Plant rdf:type owl:Class ;
+                  rdfs:subClassOf :T_Transforming .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#T_Transforming
+:T_Transforming rdf:type owl:Class ;
+                rdfs:subClassOf :Operating_Product ;
+                rdfs:comment "Transforming"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#U
+:U rdf:type owl:Class ;
+   rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UA_Positioning
+:UA_Positioning rdf:type owl:Class ;
+                rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UB_Carrying
+:UB_Carrying rdf:type owl:Class ;
+             rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UC_Enclosing
+:UC_Enclosing rdf:type owl:Class ;
+              rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UL_Structural_Supporting
+:UL_Structural_Supporting rdf:type owl:Class ;
+                          rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UM_Reinforcing
+:UM_Reinforcing rdf:type owl:Class ;
+                rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UN_Framing
+:UN_Framing rdf:type owl:Class ;
+            rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UP_Jointing
+:UP_Jointing rdf:type owl:Class ;
+             rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UQ_Fastening
+:UQ_Fastening rdf:type owl:Class ;
+              rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UT_Levelling
+:UT_Levelling rdf:type owl:Class ;
+              rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#UU_Existing_Ground
+:UU_Existing_Ground rdf:type owl:Class ;
+                    rdfs:subClassOf :U_Holding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#U_Holding
+:U_Holding rdf:type owl:Class ;
+           rdfs:subClassOf :Operating_Product ;
+           rdfs:comment "Localising of other objects"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WBA_High_voltage_electric_energy_Guiding_by_a_busbar
+:WBA_High_voltage_electric_energy_Guiding_by_a_busbar rdf:type owl:Class ;
+                                                      rdfs:subClassOf :WB_Guiding_high_voltage_electric_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WBB_High_voltage_electric_energy_Guiding_by_a_cable
+:WBB_High_voltage_electric_energy_Guiding_by_a_cable rdf:type owl:Class ;
+                                                     rdfs:subClassOf :WB_Guiding_high_voltage_electric_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WBC_High_voltage_electric_energy_Guiding_by_a_wire
+:WBC_High_voltage_electric_energy_Guiding_by_a_wire rdf:type owl:Class ;
+                                                    rdfs:subClassOf :WB_Guiding_high_voltage_electric_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WB_Guiding_high_voltage_electric_energy
+:WB_Guiding_high_voltage_electric_energy rdf:type owl:Class ;
+                                         rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WDA_Low_voltage_electric_energy_Guiding_by_a_busbar
+:WDA_Low_voltage_electric_energy_Guiding_by_a_busbar rdf:type owl:Class ;
+                                                     rdfs:subClassOf :WD_Guiding_low_voltage_electric_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WDB_Low_voltage_electric_energy_Guiding_by_a_cable
+:WDB_Low_voltage_electric_energy_Guiding_by_a_cable rdf:type owl:Class ;
+                                                    rdfs:subClassOf :WD_Guiding_low_voltage_electric_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WDC_Low_voltage_electric_energy_Guiding_by_a_wire
+:WDC_Low_voltage_electric_energy_Guiding_by_a_wire rdf:type owl:Class ;
+                                                   rdfs:subClassOf :WD_Guiding_low_voltage_electric_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WD_Guiding_low_voltage_electric_energy
+:WD_Guiding_low_voltage_electric_energy rdf:type owl:Class ;
+                                        rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WE_Reference_potential_Guiding
+:WE_Reference_potential_Guiding rdf:type owl:Class ;
+                                rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WGA_Electric_signal_Guiding_for_controlling_and_measuring
+:WGA_Electric_signal_Guiding_for_controlling_and_measuring rdf:type owl:Class ;
+                                                           rdfs:subClassOf :WG_Electric_signal_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WGB_Electric_signal_Guiding_for_data_transmission
+:WGB_Electric_signal_Guiding_for_data_transmission rdf:type owl:Class ;
+                                                   rdfs:subClassOf :WG_Electric_signal_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WGC_Electric_signal_Guiding_through_an_enclosure_or_wall
+:WGC_Electric_signal_Guiding_through_an_enclosure_or_wall rdf:type owl:Class ;
+                                                          rdfs:subClassOf :WG_Electric_signal_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WG_Electric_signal_Guiding
+:WG_Electric_signal_Guiding rdf:type owl:Class ;
+                            rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WH_Light_Guiding
+:WH_Light_Guiding rdf:type owl:Class ;
+                  rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WJ_Sound_Guiding
+:WJ_Sound_Guiding rdf:type owl:Class ;
+                  rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WL_Solid_matter_Guiding
+:WL_Solid_matter_Guiding rdf:type owl:Class ;
+                         rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WM_Open_enclosure_Guiding
+:WM_Open_enclosure_Guiding rdf:type owl:Class ;
+                           rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WPA_Closed_enclosure_Guiding_in_a_circular_rigid_form
+:WPA_Closed_enclosure_Guiding_in_a_circular_rigid_form rdf:type owl:Class ;
+                                                       rdfs:subClassOf :WP_Closed_enclosure_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WPB_Closed_enclosure_Guiding_in_a_non-circular_rigid_form
+:WPB_Closed_enclosure_Guiding_in_a_non-circular_rigid_form rdf:type owl:Class ;
+                                                           rdfs:subClassOf :WP_Closed_enclosure_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WPC_Closed_enclosure_Guiding_in_a_flexible_form
+:WPC_Closed_enclosure_Guiding_in_a_flexible_form rdf:type owl:Class ;
+                                                 rdfs:subClassOf :WP_Closed_enclosure_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WP_Closed_enclosure_Guiding
+:WP_Closed_enclosure_Guiding rdf:type owl:Class ;
+                             rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WQ_Mechanical_energy_Guiding
+:WQ_Mechanical_energy_Guiding rdf:type owl:Class ;
+                              rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WR_Rail
+:WR_Rail rdf:type owl:Class ;
+         rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WVA_Thermal_energy_Guiding_by_a_solid_mass
+:WVA_Thermal_energy_Guiding_by_a_solid_mass rdf:type owl:Class ;
+                                            rdfs:subClassOf :WV_Thermal_energy_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WVB_Thermal_energy_Guiding_by_a_static_fluid_mass
+:WVB_Thermal_energy_Guiding_by_a_static_fluid_mass rdf:type owl:Class ;
+                                                   rdfs:subClassOf :WV_Thermal_energy_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WV_Thermal_energy_Guiding
+:WV_Thermal_energy_Guiding rdf:type owl:Class ;
+                           rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WZ_Multiple_flow_Guiding
+:WZ_Multiple_flow_Guiding rdf:type owl:Class ;
+                          rdfs:subClassOf :W_Guiding .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#W_Guiding
+:W_Guiding rdf:type owl:Class ;
+           rdfs:subClassOf :Operating_Product ;
+           rdfs:comment "Leading from one place to another"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XB
+:XB rdf:type owl:Class ;
+    rdfs:subClassOf :XB_High_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XBA_High_voltage_Connecting_for_a_single_connection
+:XBA_High_voltage_Connecting_for_a_single_connection rdf:type owl:Class ;
+                                                     rdfs:subClassOf :XB_High_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XBB_High_voltage_Connecting_for_pluggable_connecting
+:XBB_High_voltage_Connecting_for_pluggable_connecting rdf:type owl:Class ;
+                                                      rdfs:subClassOf :XB_High_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XBC_High_voltage_Connecting_for_multiple_fixed_connections
+:XBC_High_voltage_Connecting_for_multiple_fixed_connections rdf:type owl:Class ;
+                                                            rdfs:subClassOf :XB_High_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XB_High_voltage_Connecting
+:XB_High_voltage_Connecting rdf:type owl:Class ;
+                            rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XDA_Low_voltage_Connecting_for_a_single_connection
+:XDA_Low_voltage_Connecting_for_a_single_connection rdf:type owl:Class ;
+                                                    rdfs:subClassOf :XD_Low_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XDB_Low_voltage_Connecting_for_pluggable_connections
+:XDB_Low_voltage_Connecting_for_pluggable_connections rdf:type owl:Class ;
+                                                      rdfs:subClassOf :XD_Low_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XDC_Low_voltage_Connecting_for_multiple_fixed_connections
+:XDC_Low_voltage_Connecting_for_multiple_fixed_connections rdf:type owl:Class ;
+                                                           rdfs:subClassOf :XD_Low_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XDD_Low_voltage_Connecting_for_fixed_connection_of_a_flexible_cable_for_a_current-using_equipment
+:XDD_Low_voltage_Connecting_for_fixed_connection_of_a_flexible_cable_for_a_current-using_equipment rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf :XD_Low_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XDE_Low_voltage_Connecting_of_multiple_pluggable_current-using_equipment
+:XDE_Low_voltage_Connecting_of_multiple_pluggable_current-using_equipment rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :XD_Low_voltage_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XD_Low_voltage_Connecting
+:XD_Low_voltage_Connecting rdf:type owl:Class ;
+                           rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XE_Potential_Connecting
+:XE_Potential_Connecting rdf:type owl:Class ;
+                         rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XG_Electric_signal_Connecting
+:XG_Electric_signal_Connecting rdf:type owl:Class ;
+                               rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XH_Light_Connecting
+:XH_Light_Connecting rdf:type owl:Class ;
+                     rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XKA_Collecting_Interfacing_of_wastewater
+:XKA_Collecting_Interfacing_of_wastewater rdf:type owl:Class ;
+                                          rdfs:subClassOf :XK_Collecting_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XKB_Collecting_Interfacing_of_faeces_and_urin
+:XKB_Collecting_Interfacing_of_faeces_and_urin rdf:type owl:Class ;
+                                               rdfs:subClassOf :XK_Collecting_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XKC_Collecting_Interfacing_of_urin_only
+:XKC_Collecting_Interfacing_of_urin_only rdf:type owl:Class ;
+                                         rdfs:subClassOf :XK_Collecting_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XKD_Collecting_Interfacing_of_surplus_from_technical_system
+:XKD_Collecting_Interfacing_of_surplus_from_technical_system rdf:type owl:Class ;
+                                                             rdfs:subClassOf :XK_Collecting_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XKE_Collecting_Interfacing_of_surplus
+:XKE_Collecting_Interfacing_of_surplus rdf:type owl:Class ;
+                                       rdfs:subClassOf :XK_Collecting_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XK_Collecting_Interfacing
+:XK_Collecting_Interfacing rdf:type owl:Class ;
+                           rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XMA_Sealed_flow_Connecting_by_a_reversible_form
+:XMA_Sealed_flow_Connecting_by_a_reversible_form rdf:type owl:Class ;
+                                                 rdfs:subClassOf :XM_Sealed_flow_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XMB_Sealed_flow_Connecting_by_an_irreversible_form
+:XMB_Sealed_flow_Connecting_by_an_irreversible_form rdf:type owl:Class ;
+                                                    rdfs:subClassOf :XM_Sealed_flow_Connecting .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XM_Sealed_flow_Connecting
+:XM_Sealed_flow_Connecting rdf:type owl:Class ;
+                           rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XN_non-detachable_Coupling
+:XN_non-detachable_Coupling rdf:type owl:Class ;
+                            rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XP_Detachable_Coupling
+:XP_Detachable_Coupling rdf:type owl:Class ;
+                        rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XS_Level_Connecting
+:XS_Level_Connecting rdf:type owl:Class ;
+                     rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XTA_Space_Linking_in_the_form_of_penetration
+:XTA_Space_Linking_in_the_form_of_penetration rdf:type owl:Class ;
+                                              rdfs:subClassOf :XT_Space_Linking .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XTB_Space_Linking_in_the_form_of_cavity
+:XTB_Space_Linking_in_the_form_of_cavity rdf:type owl:Class ;
+                                         rdfs:subClassOf :XT_Space_Linking .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XT_Space_Linking
+:XT_Space_Linking rdf:type owl:Class ;
+                  rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#XZ_Multiple_flow_Connecting
+:XZ_Multiple_flow_Connecting rdf:type owl:Class ;
+                             rdfs:subClassOf :X_Interfacing .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#X_Interfacing
+:X_Interfacing rdf:type owl:Class ;
+               rdfs:subClassOf :Operating_Product ;
+               rdfs:comment "Interfacing an object"@en .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BUA_Multi-quantity_Sensing_with_scalar_output(s)
+<http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BUA_Multi-quantity_Sensing_with_scalar_output(s)> rdf:type owl:Class ;
+                                                                                                                rdfs:subClassOf :BU_Sensing_multi-quantities .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BUB_Multi-quantity_Sensing_with_boolean_output(s)
+<http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#BUB_Multi-quantity_Sensing_with_boolean_output(s)> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf :BU_Sensing_multi-quantities .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQB_Local_climate_Stabilising_by_stabilising_a_flow_of_liquids,_moisture,_wind_or_material
+<http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQB_Local_climate_Stabilising_by_stabilising_a_flow_of_liquids,_moisture,_wind_or_material> rdf:type owl:Class ;
+                                                                                                                                                          rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQD_Local_climate_Stabilising_by_restricting_wind,_precipitation_or_radiation
+<http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#RQD_Local_climate_Stabilising_by_restricting_wind,_precipitation_or_radiation> rdf:type owl:Class ;
+                                                                                                                                             rdfs:subClassOf :RQ_Local_climate_Stabilising .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WBD_High_voltage_electric_energy_Guiding_through_an_enclosure,_wall_or_barrier
+<http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WBD_High_voltage_electric_energy_Guiding_through_an_enclosure,_wall_or_barrier> rdf:type owl:Class ;
+                                                                                                                                              rdfs:subClassOf :WB_Guiding_high_voltage_electric_energy .
+
+
+###  http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WDD_Low_voltage_electric_energy_Guiding_through_an_enclosure,_wall_or_barrier
+<http://www.semanticweb.org/maisch/ontologies/2021/3/IEC81346#WDD_Low_voltage_electric_energy_Guiding_through_an_enclosure,_wall_or_barrier> rdf:type owl:Class ;
+                                                                                                                                             rdfs:subClassOf :WD_Guiding_low_voltage_electric_energy .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
